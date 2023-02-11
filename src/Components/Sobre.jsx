@@ -5,7 +5,6 @@ import { ReactComponent as Github } from "../assets/sobre/github-sobre.svg";
 import { ReactComponent as Instagram } from "../assets/sobre/instagram-sobre.svg";
 import { ReactComponent as Linkedin } from "../assets/sobre/linkedin-sobre.svg";
 const Sobre = () => {
-  // const { ref, inView } = useInView();
   const ref = React.useRef();
 
   const [aboutIsVisible, setAboutIsVisible] = React.useState(false);

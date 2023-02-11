@@ -3,7 +3,6 @@ import Sobre from "./Components/Sobre.jsx";
 import Projetos from "./Components/Projetos.jsx";
 import Skills from "./Components/Skills.jsx";
 import Contato from "./Components/Contato.jsx";
-// import Footer from "./Components/Footer.jsx";
 import './global.scss'
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
       <Projetos />
       <Skills />
       <Contato />
-      {/* <Footer /> */}
     </div>
   );
 }

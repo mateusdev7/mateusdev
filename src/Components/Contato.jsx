@@ -2,13 +2,8 @@ import React from "react";
 import { ReactComponent as Github } from "../assets/contato/github-contato.svg";
 import { ReactComponent as Instagram } from "../assets/contato/instagram-contato.svg";
 import { ReactComponent as Linkedin } from "../assets/contato/linkedin-contato.svg";
-// import myPhoto from '../assets/contato/my_photo.png'
-// import WhatsappContato from '../assets/contato/whatsapp-cor.svg'
-// import LinkedinContato from '../assets/contato/linkedin-cor.svg'
-// import GithubContato from '../assets/contato/github-white.svg'
 import styles from "../styles/Contato.module.scss";
 import Form from "./Form.jsx";
-// import Button from "./Button.jsx";
 
 const Contato = () => {
   const [contatoIsVisible, setContatoIsVisible] = React.useState(false);
@@ -87,35 +82,7 @@ const Contato = () => {
           </h3>
         </div>
         <div className={`mt-20 flex flex-col justify-center items-center`}>
-          <Form />
-          {/* <img
-            src={myPhoto}
-            alt="Foto do Mateus"
-            className={`w-2/4 md:w-3/4 shadow-inicioShadow rounded-full ${
-              contatoIsVisible ? styles.photoContato : ""
-            }`}
-          />
-          <div
-            className={`flex flex-col gap-6 mt-10 items-center ${
-              contatoIsVisible ? styles.containerButtons : ""
-            }`}
-          >
-            <Button
-              href="https://wa.me/5527995249319?text=Sinta-se%20%C3%A0%20vontade%20para%20conversar%20comigo"
-              text="Whatsapp"
-              img={WhatsappContato}
-            />
-            <Button
-              href="https://www.linkedin.com/in/mateus-paulo-51aa9521a/"
-              text="Linkedin"
-              img={LinkedinContato}
-            />
-            <Button
-              href="https://github.com/mateusdev7"
-              text="Github"
-              img={GithubContato}
-            />
-          </div> */}
+          <Form isVisible={contatoIsVisible} />
         </div>
       </section>
       <aside

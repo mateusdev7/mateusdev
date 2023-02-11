@@ -3,10 +3,62 @@
   border-bottom: 1px solid #48cae4;
   box-sizing: border-box;
   transition: 0.3s all linear;
+  opacity: 0;
+  width: 0;
+  animation-name: showInputLine;
+  animation-delay: 0.3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 
-// .input:focus {
-//   .containerLabel {
-//     background: red;
-//   }
-// }
+.label {
+  opacity: 0;
+  animation-name: showContentRightToLeft;
+  animation-delay: 0.3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.imageLabel {
+  opacity: 0;
+  animation-name: showContentLeftToRight;
+  animation-delay: 0.3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes showInputLine {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes showContentLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes showContentRightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}

@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 import { ReactComponent as Github } from "../assets/skills/github-skills.svg";
 import { ReactComponent as Instagram } from "../assets/skills/instagram-skills.svg";
 import { ReactComponent as Linkedin } from "../assets/skills/linkedin-skills.svg";
-import ReactIcon from '../assets/skills/react-icon.svg'
+import ReactIcon from "../assets/skills/react-icon.svg";
 import JSIcon from "../assets/skills/javascript-icon.svg";
 import SassIcon from "../assets/skills/sass-icon.svg";
 import FigmaIcon from "../assets/skills/figma-icon.svg";
 import TailwindIcon from "../assets/skills/tailwind-icon.svg";
 import TSIcon from "../assets/skills/typescript-icon.svg";
-import styles from '../styles/Skills.module.scss'
+import styles from "../styles/Skills.module.scss";
 import ItemSkill from "./ItemSkill.jsx";
 
 const Skills = () => {
@@ -142,6 +142,6 @@ const Skills = () => {
       </aside>
     </main>
   );
-}
+};
 
-export default Skills
+export default Skills;
