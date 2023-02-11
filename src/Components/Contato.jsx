@@ -22,7 +22,7 @@ const Contato = () => {
 
   return (
     <main
-      id="skills"
+      id="contato"
       ref={ref}
       className={`maxWidth relative pt-[160px] pb-[120px] ${styles.containerContato}`}
     >
