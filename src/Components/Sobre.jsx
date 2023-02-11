@@ -78,7 +78,7 @@ const Sobre = () => {
             Sobre
           </h1>
           <h3
-            className={`font-firaCode text-sm sm:text-lg text-whiteColor ${styles.subTitle}`}
+            className={`font-firaCode mt-3 text-sm sm:text-lg text-whiteColor ${styles.subTitle}`}
           >
             Explorando meu perfil
           </h3>

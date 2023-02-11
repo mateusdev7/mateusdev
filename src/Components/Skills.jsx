@@ -30,7 +30,7 @@ const Skills = () => {
     <main
       id="skills"
       ref={ref}
-      className={`maxWidth pt-[160px] pb-[120px] ${styles.containerSkills}`}
+      className={`maxWidth pt-[160px] pb-[40px]  md:pb-[160px] ${styles.containerSkills}`}
     >
       <aside>
         <ul
@@ -88,7 +88,7 @@ const Skills = () => {
           </h3>
         </div>
         <div
-          className={`mt-20 pl-[60px] pr-[60px] ml-auto mr-auto flex flex-row flex-wrap gap-10 w-full justify-center items-center ${
+          className={`mt-24 pl-[60px] pr-[60px] ml-auto mr-auto flex flex-row flex-wrap gap-10 w-full justify-center items-center ${
             skillsIsVisible ? styles.skillsItems : ""
           }`}
         >
