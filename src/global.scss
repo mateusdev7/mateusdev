@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Fira+Code:wght@400;600&display=swap");
+
+body {
+  background-color: #08000d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+input, label, textarea{
+  margin: 0;
+  padding: 0;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus {
+  outline: none;
+}
+
+.maxWidth {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.acompanhe {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: relative;
+  &::after {
+    content: "";
+    width: 2px;
+    height: 68px;
+    background: currentColor;
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .acompanhe {
+    &::after {
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .acompanhe {
+    writing-mode: horizontal-tb;
+    display: flex;
+    align-items: center;
+    &::after {
+      width: 68px;
+      height: 2px;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .acompanhe {
+    &::after {
+      width: 26px;
+      height: 2px;
+      display: inline-block;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+.animeLeft {
+  animation: animeLeft 0.3s ease-in-out;
+}
+
+@keyframes animeLeft {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}

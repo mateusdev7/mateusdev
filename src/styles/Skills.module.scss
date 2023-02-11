@@ -1,0 +1,340 @@
+.containerSkills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerTitle {
+  position: relative;
+  & h2 {
+    opacity: 0;
+    animation-name: showContentToptoBottom;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  .backgroundText {
+    position: absolute;
+    right: 5%;
+    top: -45%;
+    color: #08000d;
+    text-shadow: 0 0 3px #EF233C;
+    z-index: -1;
+    opacity: 0;
+    animation-name: showContentToptoBottom;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  .blurEffect {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    border-radius: 100%;
+    filter: blur(150px);
+    animation-name: showBlur;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    z-index: 1;
+  }
+  .subTitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    animation-name: showContentRightToLeft;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    &::before {
+      content: "";
+      width: 100px;
+      height: 2px;
+      display: inline-block;
+      background: #EF233C;
+      box-shadow: 0px 0px 10px 1px #EF233C;
+      opacity: 0;
+      animation-name: showContentLeftToRight;
+      animation-delay: 1s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+.listPagesActives a:nth-child(4) {
+  position: relative;
+}
+
+.listPagesActives a:nth-child(1) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(2) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 0.7s;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(3) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(4) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+    box-shadow: 0px 0px 4px 3px #ef233b8b;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 12px;
+    animation-name: showBorder;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+}
+
+.listPagesActives a:nth-child(5) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.skillsItems div {
+  opacity: 0;
+  animation-name: showContentToptoBottom;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.skillsItems div:nth-child(1) {
+  animation-delay: 2s;
+  animation-duration: 2s;
+}
+
+.skillsItems div:nth-child(2) {
+  animation-delay: 2.2s;
+  animation-duration: 2.2s;
+}
+
+.skillsItems div:nth-child(3) {
+  animation-delay: 2.3s;
+  animation-duration: 2.3s;
+}
+
+.skillsItems div:nth-child(4) {
+  animation-delay: 2.4s;
+  animation-duration: 2.5s;
+}
+
+.skillsItems div:nth-child(5) {
+  animation-delay: 2.5s;
+  animation-duration: 2.5s;
+}
+
+.skillsItems div:nth-child(6) {
+  animation-delay: 2.6s;
+  animation-duration: 2.6s;
+}
+
+.rightAside {
+  & h1,
+  & li {
+    opacity: 0;
+    animation-name: showContentToptoBottom;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+}
+
+
+@media (max-width: 1022px) {
+  .listPagesActives a:nth-child(4) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: 0;
+      bottom: 0;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+  .containerTitle {
+    .backgroundText {
+      right: 10%;
+      top: -40%;
+    }
+    .blurEffect {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 20px;
+      left: 70px;
+      filter: blur(100px);
+    }
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  .acompanhe {
+    &::after {
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .listPagesActives {
+    display: none;
+  }
+  .containerSkills {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .acompanhe {
+    writing-mode: horizontal-tb;
+    display: flex;
+    align-items: center;
+    &::after {
+      width: 68px;
+      height: 2px;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .containerTitle {
+    .blurEffect {
+      width: 100px;
+      height: 100px;
+      left: -10px;
+      top: -40px;
+      filter: blur(100px);
+    }
+  }
+  .acompanhe {
+    &::after {
+      width: 26px;
+      height: 2px;
+      display: inline-block;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+
+@keyframes showBlur {
+  from {
+    background: transparent;
+    opacity: 0;
+  }
+  to {
+    background: #EF233C;
+    opacity: 1;
+  }
+}
+
+@keyframes showBall {
+  to {
+    opacity: initial;
+    scale: 1.05;
+  }
+}
+
+@keyframes showBorder {
+  to {
+    border-color: #fff;
+  }
+}
+
+@keyframes showContentToptoBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes showContentBottomToTop {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes showContentLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes showContentRightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}

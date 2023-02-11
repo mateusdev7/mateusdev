@@ -1,0 +1,300 @@
+.containerInicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.listPagesActives a {
+  cursor: pointer;
+}
+
+.listPagesActives a:nth-child(1) {
+  position: relative;
+  box-shadow: 0px 0px 4px 3px rgba(255, 187, 17, 0.25);
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 12px;
+    animation-name: showBorder;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+}
+
+.listPagesActives a:nth-child(1) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(2) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(3) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(4) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(5) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 2.5s;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.containerTitle {
+  position: relative;
+  & h2 {
+    opacity: 0;
+    animation-name: showContentToptoBottom;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  .backgroundText {
+    position: absolute;
+    right: 27%;
+    top: -20%;
+    color: #08000d;
+    text-shadow: 0 0 3px #fb1;
+    z-index: -1;
+    opacity: 0;
+    animation-name: showContentToptoBottom;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  .blurEffect {
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    border-radius: 100%;
+    filter: blur(120px);
+    animation-name: showBlur;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    z-index: 1;
+  }
+}
+
+.inicioText {
+  opacity: 0;
+  animation-name: showContentToptoBottom;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.acompanhe {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  position: relative;
+  &::after {
+    content: "";
+    width: 2px;
+    height: 68px;
+    background: #fb1;
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.button {
+  opacity: 0;
+  animation-name: showContentBottomToTop;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.button,
+svg {
+  transition: all 0.3s linear;
+}
+
+.button:hover,
+.button:focus {
+  box-shadow: inset 0 -3.25em 0 0 #fb1;
+  color: #08000d;
+  & svg path {
+    fill: #08000d;
+  }
+}
+
+.rightAside {
+  & h1,
+  & li {
+    opacity: 0;
+    animation-name: showContentToptoBottom;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+}
+
+@media (max-width: 1022px) {
+  .listPagesActives a:nth-child(1) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: 0;
+      bottom: 0;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+  .containerTitle {
+    .backgroundText {
+      right: 25%;
+      top: -30%;
+    }
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  .acompanhe {
+    &::after {
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .listPagesActives {
+    display: none;
+  }
+  .containerInicio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .acompanhe {
+    writing-mode: horizontal-tb;
+    display: flex;
+    align-items: center;
+    &::after {
+      width: 68px;
+      height: 2px;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .containerTitle {
+    .backgroundText {
+      right: 22%;
+      top: -28%;
+    }
+    .blurEffect {
+      width: 100px;
+      height: 150px;
+      left: 70px;
+      top: -60px;
+      filter: blur(100px);
+    }
+  }
+  .acompanhe {
+    &::after {
+      width: 26px;
+      height: 2px;
+      display: inline-block;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+@keyframes showBall {
+  to {
+    opacity: initial;
+    scale: 1.05;
+  }
+}
+
+@keyframes showBorder {
+  to {
+    border-color: #fff;
+  }
+}
+
+@keyframes showBlur {
+  from {
+    background: transparent;
+    opacity: 0;
+  }
+  to {
+    background: #fb1;
+    opacity: 1;
+  }
+}
+
+@keyframes showContentToptoBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes showContentBottomToTop {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}

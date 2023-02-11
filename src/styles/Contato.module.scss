@@ -1,0 +1,348 @@
+.containerContato {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerTitle {
+  position: relative;
+  & h2 {
+    opacity: 0;
+    animation-name: showContentToptoBottom;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  .backgroundText {
+    position: absolute;
+    right: 10%;
+    top: -45%;
+    color: #08000d;
+    text-shadow: 0 0 3px #48cae4;
+    z-index: -1;
+    opacity: 0;
+    animation-name: showContentToptoBottom;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  .blurEffect {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    border-radius: 100%;
+    filter: blur(150px);
+    animation-name: showBlur;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    z-index: 1;
+  }
+  .subTitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    animation-name: showContentRightToLeft;
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    &::before {
+      content: "";
+      width: 100px;
+      height: 2px;
+      display: inline-block;
+      background: #48cae4;
+      box-shadow: 0px 0px 10px 1px #48cae4;
+      opacity: 0;
+      animation-name: showContentLeftToRight;
+      animation-delay: 1s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+    }
+  }
+}
+
+.listPagesActives a:nth-child(5) {
+  position: relative;
+}
+
+.listPagesActives a:nth-child(1) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(2) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 0.7s;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(3) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(4) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.listPagesActives a:nth-child(5) {
+  opacity: 0;
+  animation-name: showBall;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  box-shadow: 0px 0px 4px 3px #48cae4a8;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 12px;
+    animation-name: showBorder;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+}
+
+.rightAside {
+  & h1,
+  & li {
+    opacity: 0;
+    animation-name: showContentToptoBottom;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+}
+
+.photoContato {
+  opacity: 0;
+  animation-name: showContentToptoBottom;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.containerButtons a:nth-child(1) {
+  opacity: 0;
+  animation-name: showContentLeftToRight;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.containerButtons a:nth-child(2) {
+  opacity: 0;
+  animation-name: showContentRightToLeft;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.containerButtons a:nth-child(3) {
+  opacity: 0;
+  animation-name: showContentLeftToRight;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.footer {
+  background: #48cae4;
+  box-shadow: 0px 0px 10px 1px #48cae4;
+}
+
+
+@media (max-width: 1022px) {
+  .listPagesActives a:nth-child(5) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: 0;
+      bottom: 0;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      padding: 10px;
+    }
+  }
+  .containerTitle {
+    .backgroundText {
+      right: 18%;
+      top: -40%;
+    }
+    .blurEffect {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 20px;
+      left: 70px;
+      filter: blur(100px);
+    }
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  .acompanhe {
+    &::after {
+      height: 40px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .listPagesActives {
+    display: none;
+  }
+  .containerContato {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  .acompanhe {
+    writing-mode: horizontal-tb;
+    display: flex;
+    align-items: center;
+    &::after {
+      width: 68px;
+      height: 2px;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .containerTitle {
+    .blurEffect {
+      width: 100px;
+      height: 100px;
+      left: 100px;
+      top: -40px;
+      filter: blur(100px);
+    }
+    .subTitle {
+      &::before {
+        width: 80px;
+      }
+    }
+  }
+  .acompanhe {
+    &::after {
+      width: 26px;
+      height: 2px;
+      display: inline-block;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}
+
+@keyframes showBall {
+  to {
+    opacity: initial;
+    scale: 1.05;
+  }
+}
+
+@keyframes showBorder {
+  to {
+    border-color: #fff;
+  }
+}
+
+@keyframes showBlur {
+  from {
+    background: transparent;
+    opacity: 0;
+  }
+  to {
+    background: #48cae4;
+    opacity: 1;
+  }
+}
+
+@keyframes showContentToptoBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes showContentBottomToTop {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes showContentLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@keyframes showContentRightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
