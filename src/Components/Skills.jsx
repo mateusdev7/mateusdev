@@ -88,7 +88,7 @@ const Skills = () => {
           </h3>
         </div>
         <div
-          className={`mt-24 pl-[60px] pr-[60px] ml-auto mr-auto flex flex-row flex-wrap gap-10 w-full justify-center items-center ${
+          className={`mt-24 sm:pl-[60px] sm:pr-[60px] ml-auto mr-auto flex flex-row flex-wrap gap-y-5 gap-x-3 sm:gap-10 w-full justify-center items-center ${
             skillsIsVisible ? styles.skillsItems : ""
           }`}
         >
