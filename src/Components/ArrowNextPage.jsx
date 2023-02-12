@@ -32,7 +32,7 @@ const ArrowNextPage = () => {
       viewBox="0 0 89 89"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-[60px] h-[60px] transition-all duration-300 ease-linear mt-12 min-[700px]:mt-24 min-[700px]:block"
+      className="w-[60px] h-[60px] transition-all duration-300 ease-linear mt-16 sm:mt-24 sm:block"
     >
       {startArrow && (
         <g filter="url(#filter2_d_158_7)" style={displayStep(0)}>

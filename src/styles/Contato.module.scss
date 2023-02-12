@@ -30,13 +30,13 @@
     animation-timing-function: linear;
   }
   .blurEffect {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     top: -60px;
-    left: 0;
+    left: 40px;
     border-radius: 100%;
-    filter: blur(150px);
+    filter: blur(160px);
     animation-name: showBlur;
     animation-delay: 1s;
     animation-duration: 1s;

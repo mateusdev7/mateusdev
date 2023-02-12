@@ -30,7 +30,7 @@ const Skills = () => {
     <main
       id="skills"
       ref={ref}
-      className={`maxWidth pt-[160px] pb-[80px] sm:pb-[180px] ${styles.containerSkills}`}
+      className={`maxWidth pt-[100px] pb-[80px] sm:pt-[120px] sm:pb-[140px] ${styles.containerSkills}`}
     >
       <aside>
         <ul

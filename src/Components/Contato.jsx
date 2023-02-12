@@ -24,7 +24,7 @@ const Contato = () => {
     <main
       id="contato"
       ref={ref}
-      className={`maxWidth relative pt-[160px] pb-[120px] ${styles.containerContato}`}
+      className={`maxWidth relative pt-[60px] pb-[80px] sm:pt-[120px] sm:pb-[140px] ${styles.containerContato}`}
     >
       <aside>
         <ul

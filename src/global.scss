@@ -19,7 +19,11 @@ input, label, textarea{
   padding: 0;
   display: block;
   outline: none;
-  border: none;
+}
+
+textarea {
+  width: 100%;
+  background: none;
 }
 
 
