@@ -26,7 +26,7 @@ const Sobre = () => {
     <main
       id="sobre"
       ref={ref}
-      className={`maxWidth pt-[120px] pb-[40px] ${styles.containerSobre}`}
+      className={`maxWidth pt-[120px] pb-[80px] sm:pb-[140px] ${styles.containerSobre}`}
     >
       <aside>
         <ul
@@ -95,7 +95,8 @@ const Sobre = () => {
                 Quem sou eu?
               </h1>
               <p className="font-firaCode text-[#d1d1d1] text-sm lg:text-base mt-2">
-                Sou um estudando de Ciência da Computação, que é encantado pela tecnologia e o que podemos fazer com ela.
+                Sou um estudando de Ciência da Computação, que é encantado pela
+                tecnologia e o que podemos fazer com ela.
               </p>
             </li>
 
@@ -104,7 +105,11 @@ const Sobre = () => {
                 Minhas Experiências
               </h1>
               <p className="font-firaCode text-[#d1d1d1] text-sm lg:text-base mt-2 sm:text-right">
-                Comecei na área no começo do ano de 2022 e possuo poucas experiências em projetos, mas estou sempre desenvolvendo e treinando com desafios que encontro na internet e com ideias que vem a mente. Portanto, no meu estágio atual, desenvolvo projetos em equipes, no qual me enriquece e me gerou muito conhecimento. 
+                Comecei na área no começo do ano de 2022 e possuo poucas
+                experiências em projetos, mas estou sempre desenvolvendo e
+                treinando com desafios que encontro na internet e com ideias que
+                vem a mente. Portanto, no meu estágio atual, desenvolvo projetos
+                em equipes, no qual me enriquece e me gerou muito conhecimento.
               </p>
             </li>
 

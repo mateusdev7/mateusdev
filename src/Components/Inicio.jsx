@@ -12,7 +12,7 @@ const Inicio = () => {
   return (
     <div
       id="inicio"
-      className="pb-[140px] min-w-[700px]:pb-[120px] lg:w-pb-[150px]"
+      className="pb-[80px] sm:pb-[160px]"
     >
       <Header pointColor="yellowColor" blurBg="yellowColor" />
       <main className={`maxWidth sm:pt-28 lg:pt-28 ${styles.containerInicio}`}>
