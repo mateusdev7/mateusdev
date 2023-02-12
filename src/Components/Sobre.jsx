@@ -10,23 +10,25 @@ const Sobre = () => {
   const [aboutIsVisible, setAboutIsVisible] = React.useState(false);
 
   React.useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        setAboutIsVisible(true);
-        observer.unobserve(ref.current);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setAboutIsVisible(true);
+          observer.unobserve(ref.current);
+        }
+      },
+      {
+        rootMargin: "-100px",
       }
-    });
-
+    );
     observer.observe(ref.current);
-
-    return () => observer.disconnect();
   }, []);
 
   return (
     <main
       id="sobre"
       ref={ref}
-      className={`maxWidth pt-[100px] pb-[80px] sm:pt-[120px] sm:pb-[140px] ${styles.containerSobre}`}
+      className={`maxWidth pt-[160px] pb-[80px] sm:pt-[60px] sm:pb-[100px] ${styles.containerSobre}`}
     >
       <aside>
         <ul

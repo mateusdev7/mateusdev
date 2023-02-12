@@ -14,12 +14,17 @@ const Projetos = () => {
   const ref = React.useRef();
 
   React.useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        setProjectIsVisible(true);
-        observer.unobserve(ref.current);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setProjectIsVisible(true);
+          observer.unobserve(ref.current);
+        }
+      },
+      {
+        rootMargin: "-100px",
       }
-    });
+    );
     observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
@@ -28,7 +33,7 @@ const Projetos = () => {
     <main
       id="projetos"
       ref={ref}
-      className={`maxWidth pt-[100px] pb-[80px] sm:pt-[120px] sm:pb-[140px] ${styles.containerProjetos}`}
+      className={`maxWidth pt-[60px] pb-[80px] sm:pt-[60px] sm:pb-[100px] ${styles.containerProjetos}`}
     >
       <aside>
         <ul

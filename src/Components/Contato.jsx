@@ -10,12 +10,17 @@ const Contato = () => {
   const ref = React.useRef();
 
   React.useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        setContatoIsVisible(true);
-        observer.unobserve(ref.current);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setContatoIsVisible(true);
+          observer.unobserve(ref.current);
+        }
+      },
+      {
+        rootMargin: "-100px",
       }
-    });
+    );
     observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
@@ -24,7 +29,7 @@ const Contato = () => {
     <main
       id="contato"
       ref={ref}
-      className={`maxWidth relative pt-[60px] pb-[80px] sm:pt-[120px] sm:pb-[140px] ${styles.containerContato}`}
+      className={`maxWidth relative pt-[60px] pb-[80px] sm:pt-[60px] sm:pb-[100px] ${styles.containerContato}`}
     >
       <aside>
         <ul

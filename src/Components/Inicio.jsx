@@ -10,10 +10,7 @@ import { ReactComponent as Linkedin } from "../assets/inicio/linkedin-inicio.svg
 
 const Inicio = () => {
   return (
-    <div
-      id="inicio"
-      className="pb-[90px] sm:pb-[120px]"
-    >
+    <div id="inicio" className="sm:pb-[120px]">
       <Header pointColor="yellowColor" blurBg="yellowColor" />
       <main className={`maxWidth sm:pt-28 lg:pt-28 ${styles.containerInicio}`}>
         <aside>
