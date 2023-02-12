@@ -54,16 +54,16 @@ const Inicio = () => {
         </aside>
         <section className="pt-10 flex flex-col items-center w-full">
           <div className={styles.containerTitle}>
-            <h2 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
+            <h1 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
               Mateus <br />
               Paulo da Silva
-            </h2>
+            </h1>
             <div className={`${styles.blurEffect}`} />
-            <h1
+            <span
               className={`font-audioWide text-5xl sm:text-6xl lg:text-7xl text-center ${styles.backgroundText}`}
             >
               Mateus
-            </h1>
+            </span>
           </div>
           <p
             className={`font-firaCode text-center text-sm lg:text-base text-whiteColor max-w-sm sm:max-w-lg lg:max-w-xl mt-5 ${styles.inicioText}`}

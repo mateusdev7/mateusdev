@@ -72,20 +72,20 @@ const Skills = () => {
       </aside>
       <section className="pt-10 flex flex-col items-center w-full">
         <div className={`${skillsIsVisible ? styles.containerTitle : ""}`}>
-          <h2 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
+          <h1 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
             Skills
-          </h2>
+          </h1>
           <div className={`${skillsIsVisible ? styles.blurEffect : ""}`} />
-          <h1
+          <span
             className={`font-audioWide text-5xl sm:text-6xl lg:text-7xl text-center ${styles.backgroundText}`}
           >
             Skills
-          </h1>
-          <h3
+          </span>
+          <h2
             className={`font-firaCode text-sm sm:text-lg text-whiteColor mt-4 ${styles.subTitle}`}
           >
             Pool
-          </h3>
+          </h2>
         </div>
         <div
           className={`mt-24 sm:pl-[60px] sm:pr-[60px] ml-auto mr-auto flex flex-row flex-wrap gap-y-5 gap-x-3 sm:gap-10 w-full justify-center items-center ${

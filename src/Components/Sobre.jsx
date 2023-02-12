@@ -68,20 +68,20 @@ const Sobre = () => {
       </aside>
       <section className="pt-10 flex flex-col items-center w-full">
         <div className={`${aboutIsVisible ? styles.containerTitle : ""}`}>
-          <h2 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
+          <h1 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
             Sobre
-          </h2>
+          </h1>
           <div className={`${aboutIsVisible ? styles.blurEffect : ""}`} />
-          <h1
+          <span
             className={`font-audioWide text-5xl sm:text-6xl lg:text-7xl text-center ${styles.backgroundText}`}
           >
             Sobre
-          </h1>
-          <h3
+          </span>
+          <h2
             className={`font-firaCode mt-3 text-sm sm:text-lg text-whiteColor ${styles.subTitle}`}
           >
             Explorando meu perfil
-          </h3>
+          </h2>
         </div>
 
         <div className="w-full m-auto sm:w-[550px] lg:w-[850px] my-[60px] lg:my-[100px] mx-auto">

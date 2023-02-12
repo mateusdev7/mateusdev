@@ -70,20 +70,20 @@ const Projetos = () => {
       </aside>
       <section className="pt-10 flex flex-col items-center w-full">
         <div className={`${projectIsVisible ? styles.containerTitle : ""}`}>
-          <h2 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
+          <h1 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
             Projetos
-          </h2>
+          </h1>
           <div className={`${projectIsVisible ? styles.blurEffect : ""}`} />
-          <h1
+          <span
             className={`font-audioWide text-5xl sm:text-6xl lg:text-7xl text-center ${styles.backgroundText}`}
           >
             Projetos
-          </h1>
-          <h3
+          </span>
+          <h2
             className={`font-firaCode text-sm sm:text-lg text-whiteColor mt-4 ${styles.subTitle}`}
           >
             Projetos Executados
-          </h3>
+          </h2>
         </div>
         <div
           className={`grid grid-cols-1 m-auto w-full sm:w-[500px] gap-10 lg:grid-cols-2 lg:w-[850px] lg:gap-x-10 mt-20 ${

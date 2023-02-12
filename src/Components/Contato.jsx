@@ -66,20 +66,20 @@ const Contato = () => {
       </aside>
       <section className="pt-20 pb-[60px] flex flex-col items-center w-full">
         <div className={`${contatoIsVisible ? styles.containerTitle : ""}`}>
-          <h2 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
+          <h1 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
             Contato
-          </h2>
+          </h1>
           <div className={`${contatoIsVisible ? styles.blurEffect : ""}`} />
-          <h1
+          <span
             className={`font-audioWide text-5xl sm:text-6xl lg:text-7xl text-center ${styles.backgroundText}`}
           >
             Contato
-          </h1>
-          <h3
+          </span>
+          <h2
             className={`font-firaCode text-sm sm:text-lg text-whiteColor mt-4 ${styles.subTitle}`}
           >
             Entre em contato comigo
-          </h3>
+          </h2>
         </div>
         <div className={`mt-20 flex flex-col justify-center items-center`}>
           <Form isVisible={contatoIsVisible} />
