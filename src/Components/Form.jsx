@@ -36,14 +36,14 @@ const Form = ({ isVisible }) => {
         name="message"
         id="message"
         placeholder="Digite sua mensagem"
-        className="resize-none border-2 border-blueColor p-3 h-40 mb-10 rounded-2xl text-whiteColor font-firaCode text-xs w-full"
+        className={`resize-none border-2 border-blueColor p-3 h-40 mb-10 text-whiteColor font-firaCode text-xs w-full ${styles.textarea}`}
         value={message}
         rows={4}
         cols={40}
         onChange={({ target }) => setMessage(target.value)}
       />
       <button
-        className={`flex flex-row items-center gap-3 px-6 py-2 md:px-8 md:py-2 border-2 border-blueColor font-audioWide text-xs md:text-sm text-whiteColor rounded-full ${
+        className={`flex flex-row items-center gap-3 px-6 py-2 md:px-8 md:py-2 border-2 border-blueColor font-audioWide text-xs md:text-sm text-whiteColor ${
           isVisible ? styles.button : ""
         }`}
         rel="noreferrer"

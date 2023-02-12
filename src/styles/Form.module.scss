@@ -7,6 +7,48 @@
   animation-timing-function: linear;
 }
 
+.textarea {
+  width: 50%;
+  opacity: 0;
+  background: none;
+  animation-name: showTextarea;
+  animation-delay: 0.3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.textarea::-webkit-scrollbar {
+  width: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.textarea::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  background: #48cae4;
+  border-radius: 10px;
+  border: 3px solid #08000d;
+}
+
+.textarea::-webkit-scrollbar-thumb:hover {
+  background: #48cae489;
+}
+
+@keyframes showTextarea {
+  from {
+    width: 50%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
 @keyframes showContentLeftToRight {
   from {
     opacity: 0;
