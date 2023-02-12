@@ -92,24 +92,19 @@ const Sobre = () => {
           >
             <li className="text-left">
               <h1 className="font-audioWide text-whiteColor text-xl lg:text-2xl">
-                Quem é Mateus?
+                Quem sou eu?
               </h1>
               <p className="font-firaCode text-[#d1d1d1] text-sm lg:text-base mt-2">
-                Mateus Paulo é um desenvolver Front end Jr. & UI Design que
-                nasceu em Vitória/Espirito Santo.
+                Sou um estudando de Ciência da Computação, que é encantado pela tecnologia e o que podemos fazer com ela.
               </p>
             </li>
 
             <li className="sm:text-right">
               <h1 className="font-audioWide text-whiteColor text-xl lg:text-2xl">
-                Experiências
+                Minhas Experiências
               </h1>
               <p className="font-firaCode text-[#d1d1d1] text-sm lg:text-base mt-2 sm:text-right">
-                Mateus começou na área no começo do ano de 2022. Portanto, não
-                possui tantas experiências com projetos em equipe, contudo já
-                realizou alguns projetos da faculdade, desafios de sites e
-                projetos pessoais e está participando de projetos dentro da
-                empresa em que trabalha.
+                Comecei na área no começo do ano de 2022 e possuo poucas experiências em projetos, mas estou sempre desenvolvendo e treinando com desafios que encontro na internet e com ideias que vem a mente. Portanto, no meu estágio atual, desenvolvo projetos em equipes, no qual me enriquece e me gerou muito conhecimento. 
               </p>
             </li>
 
