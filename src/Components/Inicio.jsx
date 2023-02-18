@@ -69,14 +69,17 @@ const Inicio = () => {
             Espirito Santo. Tenho 22 anos e uma ambição enorme em estar sempre
             aprendendo e desenvolvendo.
           </p>
-          <button
+          <a
             className={`flex flex-row items-center gap-4 mt-10 lg:mt-14 font-audioWide uppercase text-whiteColor text-sm lg:text-base border-2 border-yellowColor rounded-2xl py-[4px] px-[26px] lg:py-[8px] lg:px-[32px] box-border ${styles.button}`}
             aria-label="Baixar Curriculo"
             aria-expanded="false"
+            download
+            href="/curriculo-mateus-frontend.pdf"
+            title="Curriculo Mateus Paulo"
           >
             Download CV
             <Download />
-          </button>
+          </a>
           <ArrowNextPage />
         </section>
         <aside
