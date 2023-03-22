@@ -65,8 +65,8 @@ const Inicio = () => {
           <p
             className={`font-firaCode text-center text-sm lg:text-base text-whiteColor max-w-sm sm:max-w-lg lg:max-w-xl mt-5 ${styles.inicioText}`}
           >
-            Olá, sou um <strong>Desenvolver Front end Jr</strong>, nascido no
-            Espirito Santo. Tenho 22 anos e uma ambição enorme em estar sempre
+            Olá, sou um <strong>Desenvolver Front end</strong>, nascido no
+            Espírito Santo. Tenho 22 anos e uma ambição enorme em estar
             aprendendo e desenvolvendo.
           </p>
           <a

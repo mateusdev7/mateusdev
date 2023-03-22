@@ -97,8 +97,12 @@ const Sobre = () => {
                 Quem sou eu?
               </h1>
               <p className="font-firaCode text-[#d1d1d1] text-sm lg:text-base mt-2">
-                Sou um estudando de Ciência da Computação, que é encantado pela
-                tecnologia e o que podemos fazer com ela.
+                Sou um estudante de Ciência da Computação que busca
+                constantemente novos desafios e aprimorar minhas habilidades em
+                desenvolvimento de software. Tenho experiência com linguagens
+                como Javascript/Typescript e frameworks como ReactJs/Next 13,
+                mas estou sempre aberto a novas tecnologias. Meu objetivo é
+                crescer profissionalmente e contribuir para projetos de impacto.
               </p>
             </li>
 
@@ -107,10 +111,11 @@ const Sobre = () => {
                 Minhas Experiências
               </h1>
               <p className="font-firaCode text-[#d1d1d1] text-sm lg:text-base mt-2 sm:text-right">
-                Comecei na área no começo do ano de 2022 e possuo poucas
-                experiências em projetos, mas estou sempre desenvolvendo e
-                treinando com desafios. Contudo, no meu atual estágio,
-                desenvolvo projetos em equipe.
+                Como estagiário na empresa Globalsys, adquiri sólida experiência
+                em desenvolvimento de software utilizando tecnologias como
+                ReactJS/Next 13, Typescript e Figma. Comprometido com a
+                qualidade e em constante busca por aprimoramento, busco
+                contribuir com soluções eficientes e impactantes.
               </p>
             </li>
 
@@ -120,8 +125,9 @@ const Sobre = () => {
               </h1>
               <p className="font-firaCode text-[#d1d1d1] text-sm lg:text-base mt-2">
                 Buscando sempre desenvolver com boas práticas, melhorando e
-                criando protótipos/interfaces no figma e criando códigos mais
-                limpos e acessíveis para todo o público.
+                criando protótipos/interfaces no figma e códigos mais
+                performaticos e acessíveis para todo o público, em relação ao
+                acesso na web.
               </p>
             </li>
           </ul>
