@@ -7,13 +7,14 @@
 
 .containerTitle {
   position: relative;
-  & h1 {
+  & .titleProject {
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1s linear 1s forwards;
+    font-family: "Audiowide", cursive;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #ffffff;
+    text-align: center;
   }
   .backgroundText {
     position: absolute;
@@ -23,11 +24,7 @@
     text-shadow: 0 0 3px #7b2cbf;
     z-index: -1;
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1.5s linear 1s forwards;
   }
   .blurEffect {
     width: 200px;
@@ -37,11 +34,7 @@
     left: 70px;
     border-radius: 100%;
     filter: blur(150px);
-    animation-name: showBlur;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showBlur 1s linear 1s forwards;
     z-index: 1;
   }
   .subTitle {
@@ -50,11 +43,7 @@
     align-items: center;
     gap: 8px;
     opacity: 0;
-    animation-name: showContentRightToLeft;
-    animation-delay: 1.5s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentRightToLeft 1.5s linear 1.5s forwards;
     &::before {
       content: "";
       width: 100px;
@@ -63,13 +52,16 @@
       background: #7b2cbf;
       box-shadow: 0px 0px 10px 1px #7b2cbf;
       opacity: 0;
-      animation-name: showContentLeftToRight;
-      animation-delay: 1s;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
+      animation: showContentLeftToRight 1s linear 1s forwards;
     }
   }
+}
+
+.listPagesActives {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 1rem;
 }
 
 .listPagesActives a:nth-child(3) {
@@ -78,29 +70,17 @@
 
 .listPagesActives a:nth-child(1) {
   opacity: 0;
-  animation-name: showBall;
-  animation-delay: 0.5s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showBall 0.5s linear 0.5s forwards;
 }
 
 .listPagesActives a:nth-child(2) {
   opacity: 0;
-  animation-name: showBall;
-  animation-delay: 0.7s;
-  animation-duration: 0.7s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showBall 0.7s linear 0.7s forwards;
 }
 
 .listPagesActives a:nth-child(3) {
   opacity: 0;
-  animation-name: showBall;
-  animation-delay: 1s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showBall 1s linear 1s forwards;
   box-shadow: 0px 0px 4px 3px #7a2cbf81;
   &::after {
     content: "";
@@ -112,83 +92,51 @@
     border: 1px solid transparent;
     border-radius: 50%;
     padding: 12px;
-    animation-name: showBorder;
-    animation-delay: 3s;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showBorder 1s linear 2.5s forwards;
   }
 }
 
 .listPagesActives a:nth-child(4) {
   opacity: 0;
-  animation-name: showBall;
-  animation-delay: 1.5s;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showBall 1.5s linear 1.5s forwards;
 }
 
 .listPagesActives a:nth-child(5) {
   opacity: 0;
-  animation-name: showBall;
-  animation-delay: 2s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showBall 2s linear 2s forwards;
 }
 
 .rightAside {
   & h1,
   & li {
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1s linear 1s forwards;
   }
 }
 
 .listProjects main:nth-child(1) {
   margin-bottom: 5rem;
   opacity: 0;
-  animation-name: showContentLeftToRight;
-  animation-delay: 1s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showContentLeftToRight 1s linear 1s forwards;
 }
 
 .listProjects main:nth-child(2) {
   margin-top: 5rem;
   opacity: 0;
-  animation-name: showContentRightToLeft;
-  animation-delay: 1s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showContentRightToLeft 1s linear 1s forwards;
 }
 
 .listProjects main:nth-child(3) {
   margin-top: 1rem;
   margin-bottom: 2rem;
   opacity: 0;
-  animation-name: showContentLeftToRight;
-  animation-delay: 1.3s;
-  animation-duration: 1.3s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showContentLeftToRight 1.3s linear 1.3s forwards;
 }
 
 .listProjects main:nth-child(4) {
   margin-top: 5rem;
   opacity: 0;
-  animation-name: showContentRightToLeft;
-  animation-delay: 1.3s;
-  animation-duration: 1.3s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showContentRightToLeft 1.3s linear 1.3s forwards;
 }
 
 @media (max-width: 1022px) {
@@ -263,6 +211,24 @@
       height: 2px;
       margin-left: 8px;
       margin-right: 8px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerTitle {
+    .titleProject {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .containerTitle {
+    .titleProject {
+      font-size: 3rem;
+      line-height: 1;
     }
   }
 }

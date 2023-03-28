@@ -36,11 +36,7 @@ const Projetos = () => {
       className={`maxWidth pt-[60px] pb-[80px] sm:pt-[60px] sm:pb-[100px] ${styles.containerProjetos}`}
     >
       <aside>
-        <ul
-          className={`${
-            projectIsVisible ? styles.listPagesActives : ""
-          } min-[700px]:flex flex-col gap-8 ml-4`}
-        >
+        <ul className={`${projectIsVisible ? styles.listPagesActives : ""}`}>
           <a
             href="#inicio"
             className="bg-yellowColor h-3 w-3 lg:w-4 lg:h-4 rounded-full"
@@ -75,7 +71,11 @@ const Projetos = () => {
       </aside>
       <section className="pt-10 flex flex-col items-center w-full">
         <div className={`${projectIsVisible ? styles.containerTitle : ""}`}>
-          <h1 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
+          <h1
+            className={`${
+              projectIsVisible ? styles.titleProject : ""
+            } sm:text-5xl lg:text-6xl`}
+          >
             Projetos
           </h1>
           <div className={`${projectIsVisible ? styles.blurEffect : ""}`} />
