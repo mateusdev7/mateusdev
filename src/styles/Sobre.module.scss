@@ -5,23 +5,14 @@
   align-items: center;
 }
 
-.titleAbout {
-  font-family: Audiowide;
-  font-size: 3.75rem;
-  line-height: 1;
-  text-align: center;
-  color: white;
-}
-
 .containerTitle {
   position: relative;
-  & h1 {
+  & .titleAbout {
+    font-family: Audiowide;
+    text-align: center;
+    color: white;
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1s linear 1s forwards;
   }
   .backgroundText {
     position: absolute;
@@ -31,11 +22,7 @@
     text-shadow: 0 0 3px #16db65;
     z-index: -1;
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1s linear 1.5s forwards;
   }
   .blurEffect {
     width: 200px;
@@ -45,11 +32,7 @@
     left: 70px;
     border-radius: 100%;
     filter: blur(150px);
-    animation-name: showBlur;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showBlur 1s linear 1s forwards;
     z-index: 1;
   }
   .subTitle {
@@ -63,11 +46,7 @@
     align-items: center;
     gap: 8px;
     opacity: 0;
-    animation-name: showContentRightToLeft;
-    animation-delay: 1.5s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentRightToLeft 1.5s linear 1.5s forwards;
     &::before {
       content: "";
       width: 100px;
@@ -76,62 +55,9 @@
       background: #16db65;
       box-shadow: 0px 0px 10px 1px #16db65;
       opacity: 0;
-      animation-name: showContentLeftToRight;
-      animation-delay: 1s;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
+      animation: showContentLeftToRight 1s linear 1s forwards;
     }
   }
-}
-
-.listPagesActives {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-left: 1rem;
-}
-
-.listPagesActives a:nth-child(2) {
-  position: relative;
-}
-
-.listPagesActives a:nth-child(1) {
-  opacity: 0;
-  animation: showBall 0.5s linear 0.5s forwards;
-}
-
-.listPagesActives a:nth-child(2) {
-  opacity: 0;
-  animation: showBall 0.7s linear 0.7s forwards;
-  box-shadow: 0px 0px 4px 3px #16db655f;
-  &::after {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: 0;
-    bottom: 0;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    padding: 12px;
-    animation: showBorder 1s linear 2.5s forwards;
-  }
-}
-
-.listPagesActives a:nth-child(3) {
-  opacity: 0;
-  animation: showBall 1s linear 1s forwards;
-}
-
-.listPagesActives a:nth-child(4) {
-  opacity: 0;
-  animation: showBall 1.5s linear 1.5s forwards;
-}
-
-.listPagesActives a:nth-child(5) {
-  opacity: 0;
-  animation: showBall 2s linear 2s forwards;
 }
 
 .listSobre li {
@@ -202,6 +128,88 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
+  }
+}
+
+.listPagesActives {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 1rem;
+}
+
+.listPagesActives a:nth-child(2) {
+  position: relative;
+}
+
+.listPagesActives a:nth-child(1) {
+  opacity: 0;
+  animation: showBall 0.5s linear 0.5s forwards;
+}
+
+.listPagesActives a:nth-child(2) {
+  opacity: 0;
+  animation: showBall 0.7s linear 0.7s forwards;
+  box-shadow: 0px 0px 4px 3px #16db655f;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 12px;
+    animation: showBorder 1s linear 2.5s forwards;
+  }
+}
+
+.listPagesActives a:nth-child(3) {
+  opacity: 0;
+  animation: showBall 1s linear 1s forwards;
+}
+
+.listPagesActives a:nth-child(4) {
+  opacity: 0;
+  animation: showBall 1.5s linear 1.5s forwards;
+}
+
+.listPagesActives a:nth-child(5) {
+  opacity: 0;
+  animation: showBall 2s linear 2s forwards;
+}
+
+@media (min-width: 1024px) {
+  .containerTitle {
+    .titleAbout {
+      font-size: 3.75rem; /* 60px */
+      line-height: 1;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .containerTitle {
+    .titleAbout {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .containerTitle {
+    .titleAbout {
+      font-size: 2.25rem; /* 36px */
+      line-height: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .listPagesActives {
+    display: none;
   }
 }
 

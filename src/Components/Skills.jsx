@@ -24,7 +24,7 @@ const Skills = () => {
         }
       },
       {
-        rootMargin: "-200px",
+        rootMargin: "-100px",
       }
     );
     observer.observe(ref.current);
@@ -38,11 +38,7 @@ const Skills = () => {
       className={`maxWidth pt-[60px] pb-[40px] sm:pt-[60px] sm:pb-[100px] ${styles.containerSkills}`}
     >
       <aside>
-        <ul
-          className={`${
-            skillsIsVisible ? styles.listPagesActives : ""
-          } min-[700px]:flex flex-col gap-8 ml-4`}
-        >
+        <ul className={`${skillsIsVisible ? styles.listPagesActives : ""}`}>
           <a
             href="#inicio"
             className="bg-yellowColor h-3 w-3 lg:w-4 lg:h-4 rounded-full"
@@ -77,7 +73,7 @@ const Skills = () => {
       </aside>
       <section className="pt-10 flex flex-col items-center w-full">
         <div className={`${skillsIsVisible ? styles.containerTitle : ""}`}>
-          <h1 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
+          <h1 className={`${skillsIsVisible ? styles.titleSkills : ""} `}>
             Skills
           </h1>
           <div className={`${skillsIsVisible ? styles.blurEffect : ""}`} />
@@ -93,7 +89,7 @@ const Skills = () => {
           </h2>
         </div>
         <div
-          className={`mt-24 sm:pl-[60px] sm:pr-[60px] ml-auto mr-auto flex flex-row flex-wrap gap-y-5 gap-x-3 sm:gap-10 w-full justify-center items-center ${
+          className={`mt-24 sm:pl-[60px] sm:pr-[60px] ml-auto mr-auto flex flex-row flex-wrap gap-y-5 gap-x-3 sm:gap-10 w-4/5 justify-center items-center ${
             skillsIsVisible ? styles.skillsItems : ""
           }`}
         >

@@ -18,8 +18,7 @@ const Sobre = () => {
         }
       },
       {
-        rootMargin: "-200px",
-        // threshold: 0.5,
+        rootMargin: "-100px",
       }
     );
     observer.observe(ref.current);

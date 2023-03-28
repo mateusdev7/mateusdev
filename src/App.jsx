@@ -3,7 +3,7 @@ import Sobre from "./Components/Sobre.jsx";
 import Projetos from "./Components/Projetos.jsx";
 import Skills from "./Components/Skills.jsx";
 import Contato from "./Components/Contato.jsx";
-import './global.scss'
+import "./global.scss";
 
 function App() {
   return (

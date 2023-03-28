@@ -305,7 +305,7 @@
 @keyframes showContentToptoBottom {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
@@ -316,7 +316,7 @@
 @keyframes showContentBottomToTop {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(21px);
   }
   to {
     opacity: 1;
@@ -327,7 +327,7 @@
 @keyframes showContentLeftToRight {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-10px);
   }
   to {
     opacity: 1;
@@ -338,7 +338,7 @@
 @keyframes showContentRightToLeft {
   from {
     opacity: 0;
-    transform: translateX(40px);
+    transform: translateX(10px);
   }
   to {
     opacity: 1;

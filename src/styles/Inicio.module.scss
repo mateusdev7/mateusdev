@@ -22,68 +22,40 @@
     border: 1px solid transparent;
     border-radius: 50%;
     padding: 12px;
-    animation-name: showBorder;
-    animation-delay: 3s;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showBorder 1s linear 3s forwards;
   }
 }
 
 .listPagesActives a:nth-child(1) {
   opacity: 0;
-  animation-name: showBall;
-  animation-delay: 0.5s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showBall 1s linear 0.5s forwards;
 }
 
 .listPagesActives a:nth-child(2) {
   opacity: 0;
-  animation-name: showBall;
-  animation-delay: 1s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showBall 1s linear 1s forwards;
 }
 
 .listPagesActives a:nth-child(3) {
   opacity: 0;
-  animation-name: showBall;
-  animation-delay: 1.5s;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showBall 1s linear 1.5s forwards;
 }
 
 .listPagesActives a:nth-child(4) {
   opacity: 0;
-  animation-name: showBall;
-  animation-delay: 2s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showBall 1s linear 2s forwards;
 }
 
 .listPagesActives a:nth-child(5) {
   opacity: 0;
-  animation-name: showBall;
-  animation-delay: 2.5s;
-  animation-duration: 2.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showBall 1s linear 2.5s forwards;
 }
 
 .containerTitle {
   position: relative;
   & h1 {
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1s linear 1s forwards;
   }
   .backgroundText {
     position: absolute;
@@ -93,11 +65,7 @@
     text-shadow: 0 0 3px #fb1;
     z-index: -1;
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1s linear 1s forwards;
   }
   .blurEffect {
     width: 100px;
@@ -107,22 +75,14 @@
     left: 150px;
     border-radius: 100%;
     filter: blur(120px);
-    animation-name: showBlur;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showBlur 1s linear 1s forwards;
     z-index: 1;
   }
 }
 
 .inicioText {
   opacity: 0;
-  animation-name: showContentToptoBottom;
-  animation-delay: 1s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showContentToptoBottom 1s linear 1s forwards;
 }
 
 .acompanhe {
@@ -143,10 +103,7 @@
 .button {
   opacity: 0;
   animation-name: showContentBottomToTop;
-  animation-delay: 1s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
+  animation: showContentBottomToTop 1s linear 1s forwards;
 }
 
 .button,
@@ -167,11 +124,7 @@ svg {
   & h1,
   & li {
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1s linear 1s forwards;
   }
 }
 
@@ -280,7 +233,7 @@ svg {
 @keyframes showContentToptoBottom {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
@@ -291,7 +244,7 @@ svg {
 @keyframes showContentBottomToTop {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;

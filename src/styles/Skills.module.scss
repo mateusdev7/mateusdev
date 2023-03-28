@@ -7,13 +7,12 @@
 
 .containerTitle {
   position: relative;
-  & h1 {
+  & .titleSkills {
+    font-family: "Audiowide", cursive;
+    color: #ffffff;
+    text-align: center;
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1s linear 1s forwards;
   }
   .backgroundText {
     position: absolute;
@@ -23,11 +22,7 @@
     text-shadow: 0 0 3px #ef233c;
     z-index: -1;
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1.5s linear 1s forwards;
   }
   .blurEffect {
     width: 150px;
@@ -37,11 +32,7 @@
     left: 0;
     border-radius: 100%;
     filter: blur(160px);
-    animation-name: showBlur;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showBlur 1s linear 1s forwards;
     z-index: 1;
   }
   .subTitle {
@@ -50,11 +41,8 @@
     align-items: center;
     gap: 8px;
     opacity: 0;
-    animation-name: showContentRightToLeft;
-    animation-delay: 1.5s;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentRightToLeft 1.5s linear 1.5s forwards;
+
     &::before {
       content: "";
       width: 100px;
@@ -63,79 +51,9 @@
       background: #ef233c;
       box-shadow: 0px 0px 10px 1px #ef233c;
       opacity: 0;
-      animation-name: showContentLeftToRight;
-      animation-delay: 1s;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
-      animation-timing-function: linear;
+      animation: showContentLeftToRight 1s linear 1s forwards;
     }
   }
-}
-
-.listPagesActives a:nth-child(4) {
-  position: relative;
-}
-
-.listPagesActives a:nth-child(1) {
-  opacity: 0;
-  animation-name: showBall;
-  animation-delay: 0.5s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-}
-
-.listPagesActives a:nth-child(2) {
-  opacity: 0;
-  animation-name: showBall;
-  animation-delay: 0.7s;
-  animation-duration: 0.7s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-}
-
-.listPagesActives a:nth-child(3) {
-  opacity: 0;
-  animation-name: showBall;
-  animation-delay: 1s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-}
-
-.listPagesActives a:nth-child(4) {
-  opacity: 0;
-  animation-name: showBall;
-  animation-delay: 1.5s;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  box-shadow: 0px 0px 4px 3px #ef233b8b;
-  &::after {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: 0;
-    bottom: 0;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    padding: 12px;
-    animation-name: showBorder;
-    animation-delay: 3s;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-  }
-}
-
-.listPagesActives a:nth-child(5) {
-  opacity: 0;
-  animation-name: showBall;
-  animation-delay: 2s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
 }
 
 .skillsItems div {
@@ -179,11 +97,97 @@
   & h1,
   & li {
     opacity: 0;
-    animation-name: showContentToptoBottom;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation: showContentToptoBottom 1s linear 1s forwards;
+  }
+}
+
+.listPagesActives {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 1rem;
+}
+
+.listPagesActives a:nth-child(4) {
+  position: relative;
+}
+
+.listPagesActives a:nth-child(1) {
+  opacity: 0;
+  animation: showBall 0.5s linear 0.5s forwards;
+}
+
+.listPagesActives a:nth-child(2) {
+  opacity: 0;
+  animation: showBall 0.7s linear 0.7s forwards;
+}
+
+.listPagesActives a:nth-child(3) {
+  opacity: 0;
+  animation: showBall 1s linear 1s forwards;
+}
+
+.listPagesActives a:nth-child(4) {
+  opacity: 0;
+  animation: showBall 1.5s linear 1.5s forwards;
+  box-shadow: 0px 0px 4px 3px #ef233b8b;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: 0;
+    bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 12px;
+    animation: showBorder 1s linear 2.5s forwards;
+  }
+}
+.listPagesActives a:nth-child(5) {
+  opacity: 0;
+  animation: showBall 2s linear 2s forwards;
+}
+
+@media (max-width: 700px) {
+  .listPagesActives {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .containerTitle {
+    .titleSkills {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .containerTitle {
+    .titleSkills {
+      font-size: 3rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .containerTitle {
+    .titleSkills {
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .containerTitle {
+    .titleSkills {
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
   }
 }
 
@@ -296,7 +300,7 @@
 @keyframes showContentToptoBottom {
   from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
   to {
     opacity: 1;
@@ -307,7 +311,7 @@
 @keyframes showContentBottomToTop {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -318,7 +322,7 @@
 @keyframes showContentLeftToRight {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-10px);
   }
   to {
     opacity: 1;
@@ -329,7 +333,7 @@
 @keyframes showContentRightToLeft {
   from {
     opacity: 0;
-    transform: translateX(40px);
+    transform: translateX(10px);
   }
   to {
     opacity: 1;
