@@ -67,11 +67,7 @@ const Sobre = () => {
       </aside>
       <section className="pt-10 flex flex-col items-center w-full">
         <div className={`${aboutIsVisible ? styles.containerTitle : ""}`}>
-          <h1
-            className={`${
-              aboutIsVisible ? styles.titleAbout : ""
-            } `}
-          >
+          <h1 className={`${aboutIsVisible ? styles.titleAbout : ""} `}>
             Sobre
           </h1>
           <div className={`${aboutIsVisible ? styles.blurEffect : ""}`} />
@@ -80,9 +76,7 @@ const Sobre = () => {
           >
             Sobre
           </span>
-          <h2
-            className={`font-firaCode mt-3 text-sm sm:text-lg text-whiteColor ${styles.subTitle}`}
-          >
+          <h2 className={`${aboutIsVisible ? styles.subTitle : ""}`}>
             Explorando meu perfil
           </h2>
         </div>
