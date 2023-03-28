@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.titleAbout {
+  font-family: Audiowide;
+  font-size: 3.75rem /* 60px */;
+  line-height: 1;
+  text-align: center;
+  color: white;
+}
+
 .containerTitle {
   position: relative;
   & h1 {
@@ -70,6 +78,13 @@
       animation-timing-function: linear;
     }
   }
+}
+
+.listPagesActives {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 1rem;
 }
 
 .listPagesActives a:nth-child(2) {
@@ -245,9 +260,6 @@
 }
 
 @media (max-width: 700px) {
-  .listPagesActives {
-    display: none;
-  }
   .containerSobre {
     display: flex;
     flex-direction: column;

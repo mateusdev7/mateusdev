@@ -18,7 +18,8 @@ const Sobre = () => {
         }
       },
       {
-        rootMargin: "-100px",
+        rootMargin: "-200px",
+        // threshold: 0.5,
       }
     );
     observer.observe(ref.current);
@@ -31,11 +32,7 @@ const Sobre = () => {
       className={`maxWidth pt-[160px] pb-[80px] sm:pt-[60px] sm:pb-[100px] ${styles.containerSobre}`}
     >
       <aside>
-        <ul
-          className={`${
-            aboutIsVisible ? styles.listPagesActives : ""
-          } min-[700px]:flex flex-col gap-8 ml-4`}
-        >
+        <ul className={`${aboutIsVisible ? styles.listPagesActives : ""}`}>
           <a
             href="#inicio"
             className="bg-yellowColor h-3 w-3 lg:w-4 lg:h-4 rounded-full"
@@ -70,7 +67,11 @@ const Sobre = () => {
       </aside>
       <section className="pt-10 flex flex-col items-center w-full">
         <div className={`${aboutIsVisible ? styles.containerTitle : ""}`}>
-          <h1 className="font-audioWide text-4xl sm:text-5xl lg:text-6xl text-whiteColor text-center">
+          <h1
+            className={`${
+              aboutIsVisible ? styles.titleAbout : ""
+            } `}
+          >
             Sobre
           </h1>
           <div className={`${aboutIsVisible ? styles.blurEffect : ""}`} />

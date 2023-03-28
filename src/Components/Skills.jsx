@@ -24,7 +24,7 @@ const Skills = () => {
         }
       },
       {
-        rootMargin: "-100px",
+        rootMargin: "-200px",
       }
     );
     observer.observe(ref.current);
