@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Header from "./Header.jsx";
-import styles from "../styles/Inicio.module.scss";
-import ArrowNextPage from "./ArrowNextPage.jsx";
 import { ReactComponent as Download } from "../assets/inicio/download-icon.svg";
 import { ReactComponent as Github } from "../assets/inicio/github-inicio.svg";
 import { ReactComponent as Instagram } from "../assets/inicio/instagram-inicio.svg";
 import { ReactComponent as Linkedin } from "../assets/inicio/linkedin-inicio.svg";
+import styles from "../styles/Inicio.module.scss";
+import ArrowNextPage from "./ArrowNextPage.jsx";
+import Header from "./Header.jsx";
 
 const Inicio = () => {
   return (
